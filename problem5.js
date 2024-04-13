@@ -1,9 +1,9 @@
-function findOlderCars(carYears) {
+function findOlderCars(carYears,input) {
     const olderCars = [];
     let olderCarsCount = 0;
 
     for (let i = 0; i < carYears.length; i++) {
-        if (carYears[i] < 2000) {
+        if (carYears[i] < input) {
             olderCars.push(carYears[i]);
             olderCarsCount++;
         }
